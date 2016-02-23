@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/novnc/utils/launch.sh --vnc $HOSTPORT
+exec /usr/bin/websockify --web /noVNC 6080 "$HOSTPORT"
